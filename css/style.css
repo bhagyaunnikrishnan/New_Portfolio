@@ -14,7 +14,7 @@
 
 :root {
     --bg-color: #0c1022;
-    --second-bg-color: #0c1022;
+    --second-bg-color: #091020;
     --text-color:#fff;
 }
 
@@ -39,7 +39,7 @@ section {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: var(--second-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -309,12 +309,9 @@ section {
 }
 
 .about-img img {
-    width: 20vw;
+    width: 21vw;
     border-radius: 25px;
     margin-left: 1rem;
-    opacity: 0;
-    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2s, 3s;
 }
 
 
@@ -331,11 +328,6 @@ section {
     background: linear-gradient(45deg, #f06,blue);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-}
-
-.about-content {
-    margin-left: 18rem;
-    margin-bottom: 16rem;
 }
 
 .about-content h2 {
@@ -357,6 +349,108 @@ section {
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
+/*
+.education-content {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.education-content .heading {
+   margin-bottom: 50px;
+}*/
+
+.hireme form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hireme form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hireme form .input-box input,
+.hireme form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.hireme form .input-box input {
+    width: 49%;
+}
+
+.hireme form textarea {
+    resize: none;
+}
+
+.hireme form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text p {
+    font-size: 16px;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: linear-gradient(45deg, #f06,blue);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Keyframes animation*/
 @keyframes slideTop {
